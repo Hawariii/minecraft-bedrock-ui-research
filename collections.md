@@ -1158,4 +1158,82 @@ Used for dynamic text entries.
 
 # Unknown Collections
 
-Collections below have been referenced
+Collections below have been referenced during UI research but their exact purpose is not fully verified.
+
+```json
+{
+  "unknown_collection_1": {
+    "status": "Unknown",
+    "notes": "Requires vanilla UI verification."
+  },
+  "unknown_collection_2": {
+    "status": "Unknown",
+    "notes": "Requires reverse engineering."
+  }
+}
+```
+
+---
+
+# Experimental Collections
+
+```json
+{
+  "experimental_collection_1": {
+    "status": "Experimental",
+    "notes": "Observed in testing environments."
+  }
+}
+```
+
+---
+
+# JSON Structure
+
+```json
+{
+  "collection_name": {
+    "display_name": "",
+    "description": "",
+    "type": "",
+    "screen": "",
+    "status": "",
+    "source": "",
+    "example": {}
+  }
+}
+```
+
+---
+
+# Entry Template
+
+```markdown
+## `collection_name`
+
+Description.
+
+| Property | Value |
+|----------|-------|
+| Status | |
+| Type | |
+| Screen | |
+| Source | |
+
+**Example**
+
+```json
+{
+  "collection_name": "",
+  "binding_type": "collection"
+}
+```
+```
+
+---
+
+# Final Statistics
+
+| Total | Confirmed | Community | Experimental | Unknown |
+|-------:|----------:|----------:|-------------:|--------:|
+| 47 | 16 | 25 | 1 | 5 |
