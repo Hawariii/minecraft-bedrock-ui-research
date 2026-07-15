@@ -12,7 +12,7 @@ Bindings connect UI controls with game data, values, states, and collections.
 
 | Total | Confirmed | Community | Experimental | Unknown |
 |-------:|----------:|----------:|-------------:|--------:|
-| 9 | 9 | 0 | 0 | 0 |
+| 33 | 31 | 0 | 2 | 0 |
 
 ---
 
