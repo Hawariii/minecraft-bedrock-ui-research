@@ -873,3 +873,259 @@ Used by list and grid selection systems.
 | Total | Confirmed | Community | Experimental | Unknown |
 |-------:|----------:|----------:|-------------:|--------:|
 | 22 | 22 | 0 | 0 | 0 |
+
+---
+
+# HUD Bindings
+
+## `#hud_visible`
+
+Controls HUD visibility.
+
+| Property | Value |
+|----------|-------|
+| Status | ✅ Confirmed |
+| Type | View Binding |
+| Value Type | Boolean |
+| Scope | HUD |
+| Source | Vanilla UI |
+
+**Description**
+
+Used to show or hide HUD elements.
+
+**Example**
+
+```json
+{
+  "bindings": [
+    {
+      "binding_name": "#hud_visible",
+      "binding_type": "view"
+    }
+  ]
+}
+```
+
+---
+
+## `#chat_visible`
+
+Controls chat visibility.
+
+| Property | Value |
+|----------|-------|
+| Status | ✅ Confirmed |
+| Type | View Binding |
+| Value Type | Boolean |
+| Scope | HUD / Chat |
+| Source | Vanilla UI |
+
+**Description**
+
+Determines whether the chat UI should appear.
+
+**Example**
+
+```json
+{
+  "bindings": [
+    {
+      "binding_name": "#chat_visible",
+      "binding_type": "view"
+    }
+  ]
+}
+```
+
+---
+
+## `#paperdoll_visible`
+
+Controls the Paper Doll display.
+
+| Property | Value |
+|----------|-------|
+| Status | ✅ Confirmed |
+| Type | View Binding |
+| Value Type | Boolean |
+| Scope | HUD |
+| Source | Vanilla UI |
+
+**Description**
+
+Controls player model visibility on HUD.
+
+**Example**
+
+```json
+{
+  "bindings": [
+    {
+      "binding_name": "#paperdoll_visible",
+      "binding_type": "view"
+    }
+  ]
+}
+```
+
+---
+
+# Chat Bindings
+
+## `#chat_message`
+
+Returns current chat message text.
+
+| Property | Value |
+|----------|-------|
+| Status | ✅ Confirmed |
+| Type | View Binding |
+| Value Type | String |
+| Scope | Chat Screen |
+| Source | Vanilla UI |
+
+**Description**
+
+Used to display chat messages.
+
+**Example**
+
+```json
+{
+  "bindings": [
+    {
+      "binding_name": "#chat_message",
+      "binding_type": "view"
+    }
+  ]
+}
+```
+
+---
+
+## `#chat_input`
+
+Returns the current chat input.
+
+| Property | Value |
+|----------|-------|
+| Status | ✅ Confirmed |
+| Type | View Binding |
+| Value Type | String |
+| Scope | Chat Screen |
+| Source | Vanilla UI |
+
+**Description**
+
+Used by chat input controls.
+
+**Example**
+
+```json
+{
+  "bindings": [
+    {
+      "binding_name": "#chat_input",
+      "binding_type": "view"
+    }
+  ]
+}
+```
+
+---
+
+# Settings Bindings
+
+## `#setting_value`
+
+Returns the current value of a setting.
+
+| Property | Value |
+|----------|-------|
+| Status | ⚠️ Experimental |
+| Type | View Binding |
+| Value Type | Mixed |
+| Scope | Settings Screen |
+| Source | Community Research |
+
+**Description**
+
+Used by settings controls to display current values.
+
+**Example**
+
+```json
+{
+  "bindings": [
+    {
+      "binding_name": "#setting_value",
+      "binding_type": "view"
+    }
+  ]
+}
+```
+
+---
+
+## `#setting_name`
+
+Returns the display name of a setting.
+
+| Property | Value |
+|----------|-------|
+| Status | ⚠️ Experimental |
+| Type | View Binding |
+| Value Type | String |
+| Scope | Settings Screen |
+| Source | Community Research |
+
+**Description**
+
+Used by settings list entries.
+
+**Example**
+
+```json
+{
+  "bindings": [
+    {
+      "binding_name": "#setting_name",
+      "binding_type": "view"
+    }
+  ]
+}
+```
+
+---
+
+# Experimental Bindings
+
+```json
+{
+  "#setting_value": {
+    "reason": "Observed in UI research but requires more verification."
+  },
+  "#setting_name": {
+    "reason": "Observed in UI research but requires more verification."
+  }
+}
+```
+
+---
+
+# Unknown Bindings
+
+```json
+{}
+```
+
+---
+
+# Updated Statistics
+
+| Total | Confirmed | Community | Experimental | Unknown |
+|-------:|----------:|----------:|-------------:|--------:|
+| 30 | 28 | 0 | 2 | 0 |
+
+
